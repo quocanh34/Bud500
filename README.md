@@ -2,7 +2,7 @@
 
 Introducing [**Bud500**](https://huggingface.co/datasets/linhtran92/viet_bud500), a comprehensive Vietnamese speech corpus designed to support ASR research community. With aprroximately **500 hours** of audio, it covers a broad spectrum of topics including podcast, travel, book, food, and so on, while spanning accents from Vietnam's North, South, and Central regions. Derived from free public audio resources, this publicly accessible dataset is designed to significantly enhance the work of developers and researchers in the field of speech recognition.
 
-The corpus was prepared by `VietAI` research team, a non-profit organization with the mission of nurturing AI talents and building a community of world-class AI experts in Vietnam.
+The corpus was prepared by [**VietAI**](https://vietai.org/) research team, a non-profit organization with the mission of nurturing AI talents and building a community of world-class AI experts in Vietnam.
 
 
 ## Languages
