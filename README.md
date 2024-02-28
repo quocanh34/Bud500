@@ -43,7 +43,7 @@ The speech material has been subdivided into portions for train, test and valida
 
 [Datasets](https://huggingface.co/datasets/linhtran92/viet_bud500)
 
-```bash
+```python
 from huggingface_hub import notebook_login
 from datasets import load_dataset
 notebook_login()
