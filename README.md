@@ -1,3 +1,17 @@
+---
+pretty_name: Bud500
+annotations_creators:
+- expert-generated
+language:
+- vi
+license:
+- cc-by-nc-sa-4.0
+multilinguality:
+- monolingual
+task_categories:
+- automatic-speech-recognition
+---
+
 ## Dataset Summary
 
 Introducing [**Bud500**](https://huggingface.co/datasets/linhtran92/viet_bud500), a comprehensive Vietnamese speech corpus designed to support ASR research community. With aprroximately **500 hours** of audio, it covers a broad spectrum of topics including podcast, travel, book, food, and so on, while spanning accents from Vietnam's North, South, and Central regions. Derived from free public audio resources, this publicly accessible dataset is designed to significantly enhance the work of developers and researchers in the field of speech recognition.
