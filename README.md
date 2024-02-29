@@ -52,15 +52,20 @@ The speech material has been subdivided into portions for train, test and valida
 
 ```python
 from datasets import load_dataset
+
 # load from parquet file (~4000 samples in a parquet file)
 # link to other parquet files: https://huggingface.co/datasets/linhtran92/viet_bud500/tree/main/data
+
 train_url = "https://huggingface.co/datasets/linhtran92/viet_bud500/resolve/main/data/train-00000-of-00105-be5f872f8be772f5.parquet"
 test_url = "https://huggingface.co/datasets/linhtran92/viet_bud500/resolve/main/data/test-00000-of-00002-531c1d81edb57297.parquet"
+
 data_files = {"train": train_url, "test" : test_url}
 dataset = load_dataset("parquet", data_files=data_files)
+
 # load dataset via streaming
 dataset = load_dataset("linhtran92/viet_bud500", split='test', streaming=True)
 dataset.take(2)
+
 # load all (649158 samples, ~100gb, ~2hrs to complete loading)
 dataset = load_dataset("linhtran92/viet_bud500", split="test")
 ```
