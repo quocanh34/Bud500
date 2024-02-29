@@ -48,7 +48,7 @@ The speech material has been subdivided into portions for train, test and valida
 | Duration         | ~500h  |    ~5.46h   | ~5.46h |
 
 ### Example usage
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pphuc25/distil-cd/blob/main/examples/quick_start_load_bud500.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nNtQnwwA4YG_fhGMb1yV1GR-h0TqsWKc?usp=sharing)
 
 [![Open In Huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/linhtran92/viet_bud500)
 
