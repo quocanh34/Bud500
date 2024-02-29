@@ -84,7 +84,7 @@ dataset = load_dataset("linhtran92/viet_bud500", split="test", use_auth_token=au
 
 ## Disclaimer
 
-During the data collection process, it is possible that some copyrighted material may inadvertently be included. If you believe that your copyrighted material has been included in our dataset without permission, please contact us directly.  
+- During the data collection process, it is possible that some copyrighted material may inadvertently be included. If you believe that your copyrighted material has been included in our dataset without permission, please contact us directly.  
 
 ## License
 ```
@@ -103,9 +103,9 @@ limitations under the License.
 ## Citation Information
 
 ```
-@misc{Bud500: A Comprehensive Vietnamese ASR Dataset,
+@misc{Bud500,
   author = {Anh Pham, Khanh Linh Tran, Linh Nguyen, Thanh Duy Cao, Phuc Phan, Duong A. Nguyen},
-  title = {Bud500},
+  title = {Bud500: A Comprehensive Vietnamese ASR Dataset},
   url = {https://github.com/quocanh34/Bud500},
   year = {2024}
 }
