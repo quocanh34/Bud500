@@ -48,8 +48,7 @@ The speech material has been subdivided into portions for train, test and valida
 
 ### Example usage
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/quocanh34/Bud500/blob/main/examples/quickstart_load_bud500.ipynb)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/quocanh34/Bud500/blob/main/examples/load_bud500.ipynb)
 [![Open In Huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/linhtran92/viet_bud500)
 
 ```python
@@ -57,12 +56,15 @@ from datasets import load_dataset
 
 auth_token = "Your HuggingFace token"
 
-# Load from parquet files (~4000 samples in a parquet file)
+# Load via Parquet files (~4000 samples in a parquet file)
 # Link to other parquet files: https://huggingface.co/datasets/linhtran92/viet_bud500/tree/main/data
 train_url = "https://huggingface.co/datasets/linhtran92/viet_bud500/resolve/main/data/train-00000-of-00105-be5f872f8be772f5.parquet"
 test_url = "https://huggingface.co/datasets/linhtran92/viet_bud500/resolve/main/data/test-00000-of-00002-531c1d81edb57297.parquet"
 data_files = {"train": train_url, "test" : test_url}
 dataset = load_dataset("parquet", data_files=data_files, use_auth_token=auth_token, num_proc=2)
+
+# Load via Streaming
+dataset = load_dataset("linhtran92/viet_bud500", split='test', streaming=True, use_auth_token=auth_token)
 
 # Load all (649158 samples)
 dataset = load_dataset("linhtran92/viet_bud500", split="test", use_auth_token=auth_token, num_proc=2)
