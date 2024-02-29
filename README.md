@@ -103,9 +103,9 @@ limitations under the License.
 ## Citation Information
 
 ```
-@misc{Bud500,
+@misc{Bud500: A Comprehensive Vietnamese ASR Dataset,
   author = {Anh Pham, Khanh Linh Tran, Linh Nguyen, Thanh Duy Cao, Phuc Phan, Duong A. Nguyen},
-  title = {{Bud500},
+  title = {Bud500},
   url = {https://github.com/quocanh34/Bud500},
   year = {2024}
 }
