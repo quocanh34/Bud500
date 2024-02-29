@@ -11,7 +11,7 @@ task_categories:
 --- -->
 # Bud500: A Comprehensive Vietnamese ASR Dataset
 
-Introducing [**Bud500**](https://huggingface.co/datasets/linhtran92/viet_bud500), a comprehensive Vietnamese speech corpus designed to support ASR research community. With aprroximately **500 hours** of audio, it covers a broad spectrum of topics including podcast, travel, book, food, and so on, while spanning accents from Vietnam's North, South, and Central regions. Derived from free public audio resources, this publicly accessible dataset is designed to significantly enhance the work of developers and researchers in the field of speech recognition.
+Introducing [**Bud500**](https://huggingface.co/datasets/linhtran92/viet_bud500), a diverse Vietnamese speech corpus designed to support ASR research community. With aprroximately **500 hours** of audio, it covers a broad spectrum of topics including podcast, travel, book, food, and so on, while spanning accents from Vietnam's North, South, and Central regions. Derived from free public audio resources, this publicly accessible dataset is designed to significantly enhance the work of developers and researchers in the field of speech recognition.
 
 The corpus was prepared by [**VietAI**](https://vietai.org/) research team, a non-profit organization with the mission of nurturing AI talents and building a community of world-class AI experts in Vietnam.
 
@@ -53,18 +53,18 @@ The speech material has been subdivided into portions for train, test and valida
 [![Open In Huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/linhtran92/viet_bud500)
 
 ```python
-from huggingface_hub import notebook_login
 from datasets import load_dataset
-notebook_login()
-auth_token="your huggingface token"
 # load from parquet file (~4000 samples in a parquet file)
 # link to other parquet files: https://huggingface.co/datasets/linhtran92/viet_bud500/tree/main/data
 train_url = "https://huggingface.co/datasets/linhtran92/viet_bud500/resolve/main/data/train-00000-of-00105-be5f872f8be772f5.parquet"
 test_url = "https://huggingface.co/datasets/linhtran92/viet_bud500/resolve/main/data/test-00000-of-00002-531c1d81edb57297.parquet"
 data_files = {"train": train_url, "test" : test_url}
-dataset = load_dataset("parquet", data_files=data_files, use_auth_token=auth_token)
-# load all (649158 samples)
-dataset = load_dataset("linhtran92/viet_bud500", split="test", use_auth_token=auth_token)
+dataset = load_dataset("parquet", data_files=data_files)
+# load dataset via streaming
+dataset = load_dataset("linhtran92/viet_bud500", split='test', streaming=True)
+dataset.take(2)
+# load all (649158 samples, ~100gb, ~2hrs to complete loading)
+dataset = load_dataset("linhtran92/viet_bud500", split="test")
 ```
 
 ## Dataset Creation
@@ -111,13 +111,13 @@ limitations under the License.
 }
 ```
 
-### Contributors
+## Contributors
  
 [@quocanh34](https://github.com/quocanh34) [@linhtran6065](https://github.com/linhtran6065) [@linhqyy](https://github.com/linhqyy) [@thanhduycao](https://github.com/thanhduycao) [@pphuc25](https://github.com/pphuc25) [@duongna21](https://github.com/duongna21).
 
 **Please CITE** our repo when it is used to help produce published results or is incorporated into other software.
 
-### Contact 
+## Contact 
 
 - phamquocanh2002ct@gmail.com
 - khanhlinhtran6065@gmail.com
